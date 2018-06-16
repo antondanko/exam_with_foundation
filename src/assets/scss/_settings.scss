@@ -139,7 +139,7 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
+    'h1': ('font-size': 60),
     'h2': ('font-size': 20),
     'h3': ('font-size': 19),
     'h4': ('font-size': 18),
@@ -147,7 +147,7 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
+    'h1': ('font-size': 100),
     'h2': ('font-size': 40),
     'h3': ('font-size': 31),
     'h4': ('font-size': 25),
@@ -820,7 +820,7 @@ $thumbnail-radius: $global-radius;
 // -------------
 
 $titlebar-background: $black;
-$titlebar-color: $white;
+$titlebar-color: #ffa800;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
 $titlebar-icon-color: $white;
@@ -846,7 +846,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: none;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
