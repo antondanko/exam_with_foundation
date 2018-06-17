@@ -57,7 +57,13 @@
 .header {
 	background: #111111 url("../img/header_bg.jpg") no-repeat;
 	background-size: cover;
-	padding-top: 154px;
+	padding: 154px 0 520px;
+	@include breakpoint(small only) {
+		background-size: contain;
+	}
+	@include breakpoint(medium down) {
+		padding-top: 50px;
+	}
 
 	&__logo {
 		border: 2px solid #ffffff;
@@ -103,6 +109,9 @@
 		line-height: 90px;
 		text-transform: uppercase;
 		margin: 600px 0 0;
+		@include breakpoint(medium down) {
+			margin: 70px 0 0;
+		}
 	}
 
 	&__text {
@@ -111,7 +120,35 @@
 		font-size: 40px;
 		font-weight: 400;
 		line-height: 50px;
-		margin: 50px 0 0;
+		margin: 50px 0 330px;
+	}
+
+	&__scroll {
+		font-family: 'Playfair Display', serif;
+		color: #ffffff;
+		font-size: 26px;
+		line-height: 1.93;
+		position: relative;
+		&:hover {
+			color: #ffa800;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: -60px;
+			right: 5px;
+			left: 5px;
+			height: 60px;
+			border: 1px solid #ffffff;
+			border-bottom: none;
+		}
+		&::after {
+			content: url('../img/scroll_arrow.png');
+			position: absolute;
+			top: -40px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 }
 
